@@ -10,8 +10,8 @@ Using the dev board [ESP32-c3-DEVKIT-RUST-1](1) I am training myself on rust for
     - [ ] LED
     - [ ] Push button
     - [ ] Fancy LED (three colours :-D)
-    - ~~[ ] Wifi~~  
-    - ~~[ ] Bluetooth~~ 
+    - [ ] ~~Wifi~~  
+    - [ ] ~~Bluetooth~~ 
 
 ## Challenges so far
 
