@@ -21,10 +21,10 @@ fn main() -> ! {
 
     let io = IO::new(peripherals_core.GPIO, peripherals_core.IO_MUX);
     let i2_c0 = peripherals_core.I2C0;
-    let gpio1 = io.pins.gpio1;
-    let gpio2 = io.pins.gpio2;
+    let gpio_sda = io.pins.gpio10;
+    let gpio_scl = io.pins.gpio8;
 
-    let i2c_handler = I2C::new(i2_c0, gpio1, gpio2, 100.kHz(), &clocks, None);
+    let i2c_handler = I2C::new(i2_c0, gpio_sda, gpio_scl, 100.kHz(), &clocks, None);
 
     let i2c_mutex = Mutex::new(RefCell::new(i2c_handler));
 
