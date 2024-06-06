@@ -26,8 +26,8 @@ impl<'a> SHTC3<'a> {
 
     pub fn init(&mut self) {
         // Add your initialization code here
-        self.write(&CMD_SOFT_RESET);
-        self.write(&CMD_SLEEP);
+        // self.write(&CMD_SOFT_RESET);
+        // self.write(&CMD_SLEEP);
         self.write(&CMD_WAKEUP);
         let mut buffer_id = [0; 3];
         self.write_read(&CMD_READ_ID, &mut buffer_id);
