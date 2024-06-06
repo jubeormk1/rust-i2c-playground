@@ -1,5 +1,3 @@
-#![no_std]
-
 use esp_hal::{i2c::I2C, peripherals::I2C0, Blocking};
 
 pub type I2CType<'a> = I2C<'a, I2C0, Blocking>;
